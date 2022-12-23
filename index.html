@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="/img/candado.png">
+    </div>
+
+    <div class="container-texto">
+        <h1 class="titulo">Encriptador de Texto</h1>
+    </div>
+
+    <div class="container">
+        <div class="cajas-texto">
+            <div class="caja1">
+                <h1 class="titulo">Mensaje</h1>
+                <textarea id="mensaje" placeholder="Mensaje a encriptar."></textarea>
+               <br>
+               <br>
+               <div style="padding: 10px;">
+                    <button id="encriptar">Encriptar</button>
+               </div> 
+               <button id="desencriptar">Descriptar</button>
+            </div>
+               <div class="caja1">
+                    <h1 class="titulo">Encriptado</h1>
+                    <textarea id="encriptado" placeholder="Mensaje encriptado"></textarea>
+                    <br>
+                    <br>
+                    <div style="padding: 10px">
+                        <button id="copiar">Copiar</button>
+                    </div>
+                    <button id="limpiar">Limpiar</button>
+               </div>
+        </div>
+    </div>
+
+    <section id="contacto">
+        <div class="container-contact">
+            <h2>Contacto</h2>
+            <div class="info">
+                <a href="https://www.linkedin.com/in/josepablomateo/"><i class="fa-brands fa-linkedin"></i><p>José Pablo Mateo Cárdenas</p></a>
+                <a href="https://github.com/Mateo7878"><i class="fa-brands fa-github"></i><p>Mateo7878</p></a>
+            </div>     
+        </div>
+    </section>
+    <script src="/Encriptation.js"></script>
+</body>
+</html>

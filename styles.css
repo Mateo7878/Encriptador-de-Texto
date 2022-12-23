@@ -1,0 +1,181 @@
+body
+{
+    position: relative;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1
+{
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1.titulo
+{
+    color: white;
+}
+
+div.logo
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    left: 40px;
+    top: -100px;
+}
+
+div.logo :first-child
+{
+    filter: contrast(0.3);
+    position: absolute;
+    left: 6.67%;
+    right: 7.43%;
+    top: 50%;
+    bottom: 0%;
+    width: 75px;
+    height: 75px;
+}
+
+div.container
+{
+    opacity: 0.95;
+    background-color: black;
+    padding: 20px;
+}
+
+.cajas-texto
+{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 45rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    background-color: black;
+    padding: 20px;
+}
+
+textarea
+{
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Courier New';
+    font-weight: 500;
+    font-size: 30px;
+    background-color: rgb(33, 36, 39);
+    color: azure;
+    padding: 1rem;
+    border: 2px solid transparent;
+    outline: none;
+    width: 70%;
+    height: 60%;
+    resize: none;
+
+    transform-origin: center top;
+    transition: 1000ms all;
+}
+
+.cajas-texto:hover textarea
+{
+    opacity: 0.5;
+}
+
+textarea:hover
+{
+    opacity: 1  !important;
+    transform: scale(1.0);
+    background-color: #B695C0;
+    color: black;
+    font-family: 'Courier New';
+    font-weight: 500;
+    font-size: 30px;
+}
+
+textarea :hover ~ textarea
+{
+    transform: translate3d(0, 27px,0);
+}
+
+
+button
+{
+    position: relative;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 15px 80px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.cajas-texto:hover button
+{
+    opacity: 0.5;
+}
+
+button:hover
+{
+    opacity: 1  !important;
+    transform: scale(1.0);
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid white;
+}
+
+button:hover ~ button
+{
+    transform: translate3d(0, 27px,0);
+}
+
+
+#contacto
+{
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+#contacto h2
+{
+    margin: 0;
+}
+
+#contacto svg
+{
+    width: 50px;
+    height: 50px;
+    color: blueviolet;
+}
+
+.info
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.info a
+{
+    margin: 0 20px;
+}
